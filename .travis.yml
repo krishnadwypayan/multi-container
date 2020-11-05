@@ -1,0 +1,15 @@
+# sudo: required
+# services:
+#   - docker
+
+# before_install:
+#   - docker build -t krishnakotadocker/react-test -f ./client/Dockerfile.dev ./client
+
+# script:
+#   - docker run -e CI=true krishnakotadocker/react-test npm run test
+
+# after_success:
+#   - docker build -t krishnakotadocker/multi-client ./client
+#   - docker build -t krishnakotadocker/multi-server ./server
+#   - docker build -t krishnakotadocker/multi-worker ./worker
+#   - docker build -t krishnakotadocker/multi-nginx ./nginx
